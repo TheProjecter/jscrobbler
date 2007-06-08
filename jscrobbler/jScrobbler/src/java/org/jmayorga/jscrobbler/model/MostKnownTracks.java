@@ -1,10 +1,6 @@
-/** 
- * <p>Título: </p> 
- * <p>Archivo: MostKnownTracks.java</p> 
- * <p>Descripcion: </p> 
- * <p>Copyright: Copyright (c) 2007</p> 
- * @author José Luis Mayorga/Certum Jun 8, 2007 
- * @version  
+/**
+ * @author José Luis Mayorga Jun 8, 2007
+ * @version
  */
 package org.jmayorga.jscrobbler.model;
 
@@ -13,7 +9,8 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 
-public class MostKnownTracks {
+public class MostKnownTracks
+{
   private String artist;
 
   private Collection<Track> tracks = new ArrayList<Track>();
@@ -29,7 +26,7 @@ public class MostKnownTracks {
   /**
    * @param artist The artist to set.
    */
-  public void setArtist(String artist)
+  public void setArtist( String artist )
   {
     this.artist = artist;
   }
@@ -39,47 +36,50 @@ public class MostKnownTracks {
    */
   public Collection<Track> getTracks()
   {
-    return Collections.unmodifiableCollection(tracks);
+    return Collections.unmodifiableCollection( tracks );
   }
 
   /**
    * @param tracks The tracks to set.
    */
-  public void setTracks(Collection<Track> tracks)
+  public void setTracks( Collection<Track> tracks )
   {
     this.tracks = tracks;
   }
 
   /**
    * Descripción:
-   * 
+   *
    * @param track
    */
-  public void addTrack(Track track)
+  public void addTrack( Track track )
   {
-    this.tracks.add(track);
+    this.tracks.add( track );
   }
 
-  public void removeTrack(Track track)
+  public void removeTrack( Track track )
   {
-    this.tracks.remove(track);
+    this.tracks.remove( track );
   }
 
   /*
    * (non-Javadoc)
-   * 
+   *
    * @see java.lang.Object#toString()
    */
   @Override
   public String toString()
   {
-    String eol = System.getProperty("line.separator");
+    String eol = System.getProperty( "line.separator" );
     StringBuffer buffer = new StringBuffer();
-    buffer.append("Artist: ").append(artist).append(eol);
-    for (Iterator iter = tracks.iterator(); iter.hasNext();)
+    buffer.append( "Artist: " )
+        .append( artist )
+        .append( eol );
+    for( Iterator iter = tracks.iterator(); iter.hasNext(); )
     {
       Track element = (Track) iter.next();
-      buffer.append("Track: ").append(element);
+      buffer.append( "Track: " )
+          .append( element );
 
     }
 

@@ -1,14 +1,11 @@
-/** 
- * <p>Título: </p> 
- * <p>Archivo: Artist.java</p> 
- * <p>Descripcion: </p> 
- * <p>Copyright: Copyright (c) 2007</p> 
- * @author José Luis Mayorga/Certum Jun 8, 2007 
- * @version  
+/**
+ * @author José Luis Mayorga Jun 8, 2007
+ * @version
  */
 package org.jmayorga.jscrobbler.model;
 
-public class Artist {
+public class Artist
+{
 
   private String name;
 
@@ -35,7 +32,7 @@ public class Artist {
   /**
    * @param image The image to set.
    */
-  public void setImage(String image)
+  public void setImage( String image )
   {
     this.image = image;
   }
@@ -51,7 +48,7 @@ public class Artist {
   /**
    * @param image_small The image_small to set.
    */
-  public void setImage_small(String image_small)
+  public void setImage_small( String image_small )
   {
     this.image_small = image_small;
   }
@@ -67,7 +64,7 @@ public class Artist {
   /**
    * @param match The match to set.
    */
-  public void setMatch(Double match)
+  public void setMatch( Double match )
   {
     this.match = match;
   }
@@ -83,7 +80,7 @@ public class Artist {
   /**
    * @param mbid The mbid to set.
    */
-  public void setMbid(String mbid)
+  public void setMbid( String mbid )
   {
     this.mbid = mbid;
   }
@@ -99,7 +96,7 @@ public class Artist {
   /**
    * @param name The name to set.
    */
-  public void setName(String name)
+  public void setName( String name )
   {
     this.name = name;
   }
@@ -115,7 +112,7 @@ public class Artist {
   /**
    * @param streamable The streamable to set.
    */
-  public void setStreamable(String streamable)
+  public void setStreamable( String streamable )
   {
     this.streamable = streamable;
   }
@@ -131,22 +128,24 @@ public class Artist {
   /**
    * @param url The url to set.
    */
-  public void setUrl(String url)
+  public void setUrl( String url )
   {
     this.url = url;
   }
 
   /*
    * (non-Javadoc)
-   * 
+   *
    * @see java.lang.Object#toString()
    */
   @Override
   public String toString()
   {
-    String eol = System.getProperty("line.separator");
+    String eol = System.getProperty( "line.separator" );
     StringBuffer buffer = new StringBuffer();
-    buffer.append("Name: ").append(name).append(eol);
+    buffer.append( "Name: " )
+        .append( name )
+        .append( eol );
     return buffer.toString();
   }
 

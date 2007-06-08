@@ -1,14 +1,11 @@
-/** 
- * <p>Título: </p> 
- * <p>Archivo: Track.java</p> 
- * <p>Descripcion: </p> 
- * <p>Copyright: Copyright (c) 2007</p> 
- * @author José Luis Mayorga/Certum Jun 8, 2007 
- * @version  
+/**
+ * @author José Luis Mayorga Jun 8, 2007
+ * @version
  */
 package org.jmayorga.jscrobbler.model;
 
-public class Track {
+public class Track
+{
 
   private String name;
 
@@ -29,7 +26,7 @@ public class Track {
   /**
    * @param mbid The mbid to set.
    */
-  public void setMbid(String mbid)
+  public void setMbid( String mbid )
   {
     this.mbid = mbid;
   }
@@ -45,7 +42,7 @@ public class Track {
   /**
    * @param name The name to set.
    */
-  public void setName(String name)
+  public void setName( String name )
   {
     this.name = name;
   }
@@ -61,7 +58,7 @@ public class Track {
   /**
    * @param reach The reach to set.
    */
-  public void setReach(String reach)
+  public void setReach( String reach )
   {
     this.reach = reach;
   }
@@ -77,22 +74,24 @@ public class Track {
   /**
    * @param url The url to set.
    */
-  public void setUrl(String url)
+  public void setUrl( String url )
   {
     this.url = url;
   }
 
   /*
    * (non-Javadoc)
-   * 
+   *
    * @see java.lang.Object#toString()
    */
   @Override
   public String toString()
   {
-    String eol = System.getProperty("line.separator");
+    String eol = System.getProperty( "line.separator" );
     StringBuffer buffer = new StringBuffer();
-    buffer.append("Name: ").append(name).append(eol);
+    buffer.append( "Name: " )
+        .append( name )
+        .append( eol );
     return buffer.toString();
   }
 }
