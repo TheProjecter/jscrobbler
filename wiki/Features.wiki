@@ -5,7 +5,7 @@
 
 
 *User Profile Data*
-||**Feature**||**Coverage**||
+||**Feature**||**Implemented**||
 ||Profile Information||Not Yet||
 ||Top Artists ||Not Yet||
 ||Top Albums ||Not Yet||
@@ -35,7 +35,7 @@
 ||Taste-O-Meter ||Not Yet||
 
 *Artist Data*
-||**Feature**||**Coverage**||
+||**Feature**||**Implemented**||
 ||Related Artists ||Done||
 ||Top Fans ||Not Yet||
 ||Top Tracks ||Done||
@@ -44,23 +44,23 @@
 ||Current Events ||Not Yet||
 
 *Album Data*
-||**Feature**||**Coverage**||
+||**Feature**||**Implemented**||
 ||Info ||Not Yet||
 
 *Track Data*
-||**Feature**||**Coverage**||
+||**Feature**||**Implemented**||
 ||Top Fans ||Not Yet||
 ||Top Tags ||Done||
 
 *Tag Data*
-||**Feature**||**Coverage**||
+||**Feature**||**Implemented**||
 ||Overall Top Tags ||Not Yet||
 ||Top Artists ||Not Yet||
 ||Top Albums ||Not Yet||
 ||Top Tracks ||Not Yet||
 
 *Group Data*
-||**Feature**||**Coverage**||
+||**Feature**||**Implemented**||
 ||Recent Journals ||Not Yet||
 ||Weekly Chart List ||Not Yet||
 ||Recent Weekly Artist Chart ||Not Yet||
@@ -71,5 +71,6 @@
 ||Previous Weekly Track Chart ||Not Yet||
 
 *Forum Data*
-||**Feature**||**Coverage**||
+||**Feature**||**Implemented**||
 ||Forums ||Not Yet||
+
