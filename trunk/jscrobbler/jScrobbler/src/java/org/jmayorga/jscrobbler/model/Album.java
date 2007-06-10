@@ -56,9 +56,8 @@ public class Album {
 
 	@Override
 	public String toString() {
-		String eol = System.getProperty("line.separator");
 		StringBuffer buffer = new StringBuffer();
-		buffer.append("Name: ").append(name).append(eol);
+		buffer.append("Album: ").append(name);
 		return buffer.toString();
 	}
 

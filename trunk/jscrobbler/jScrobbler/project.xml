@@ -95,11 +95,11 @@
         <sourceDirectory>src/java</sourceDirectory>
         <unitTestSourceDirectory>src/test</unitTestSourceDirectory>
         <unitTest>
-            <includes>
+            <!--includes>
                 <include>**/*Test.java</include>
-            </includes>
+            </includes-->
             <excludes>
-                <exclude>**/NaughtyTest.java</exclude>
+                <exclude>**/*Test.java</exclude>
             </excludes>
             <resources>
                 <resource>
