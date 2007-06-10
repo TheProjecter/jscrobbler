@@ -40,7 +40,7 @@ public class ScrobblerTest extends TestCase {
 	}
 
 	public void testGetSimilarArtists() {
-		Collection<Artist> artists = scrobbler.getSimilarArtists("Sylver");
+		Collection<Artist> artists = scrobbler.getRelatedArtists("Sylver");
 		assertNotNull("Result must not be null", artists);
 	}
 

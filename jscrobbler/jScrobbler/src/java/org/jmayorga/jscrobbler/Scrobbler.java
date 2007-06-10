@@ -42,12 +42,12 @@ public class Scrobbler {
 	private static final Log log = LogFactory.getLog(Scrobbler.class);
 
 	/**
-	 * Gets similar artists related to the artist passed as a parameter
+	 * Get related artists for a given artist
 	 *
 	 * @param artist
 	 * @return Similar artists
 	 */
-	public Collection<Artist> getSimilarArtists(String artist) {
+	public Collection<Artist> getRelatedArtists(String artist) {
 
 		log.debug("Getting similar artists for: [" + artist + "]");
 
@@ -94,10 +94,10 @@ public class Scrobbler {
 	}
 
 	/**
-	 * Gets most known tracks from the received artist
+	 * Gets most popular tracks of a given artist
 	 *
 	 * @param artist
-	 * @return
+	 * @return The most popular tracks by a given artist
 	 */
 	public Collection<Track> getMostKnownTracks(String artist) {
 
@@ -139,10 +139,10 @@ public class Scrobbler {
 	}
 
 	/**
-	 * Gets top albums from the received artist
+	 * Gets The most popular albums by a given artist
 	 *
 	 * @param artist
-	 * @return
+	 * @return The most popular albums by a given artist
 	 */
 	public Collection<Album> getTopAlbums(String artist) {
 		log.debug("Getting top albums of: [" + artist + "]");
@@ -180,10 +180,11 @@ public class Scrobbler {
 	}
 
 	/**
+	 * Gets the most popular tags of a track
 	 *
 	 * @param artist
 	 * @param track
-	 * @return
+	 * @return The most popular tags applied to a given track
 	 */
 	public Collection<Tag> getTopTrackTags(String artist, String track) {
 		log.debug("Getting top tags of: Artist - [" + artist + "], Track - ["
@@ -202,9 +203,10 @@ public class Scrobbler {
 	}
 
 	/**
+	 * Gets he most popular tags applied to a given artist
 	 *
 	 * @param artist
-	 * @return
+	 * @return the most popular tags applied to a given artist
 	 */
 	public Collection<Tag> getTopArtistTags(String artist) {
 		log.debug("Getting top tags of: [" + artist + "]");
