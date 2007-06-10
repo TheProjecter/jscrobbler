@@ -33,9 +33,15 @@ public class ScrobblerTest extends TestCase {
 		assertNotNull("Result must not be null", topAlbums);
 	}
 
-	public void testGetTopTags() {
-		Collection<Tag> tags = scrobbler.getTopTags("Sylver");
+	public void testGetTopArtistTags() {
+		Collection<Tag> tags = scrobbler.getTopArtistTags("Sylver");
 		assertNotNull("Result must not be null", tags);
 	}
 
+	public void testGetTopTrackTags() {
+		Collection<Tag> tags = scrobbler.getTopTrackTags("Sylver",
+				"Dance With Loneliness");
+		assertNotNull("Result must not be null", tags);
+
+	}
 }

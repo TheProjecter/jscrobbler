@@ -1,6 +1,7 @@
 package org.jmayorga.jscrobbler.model;
 
 import java.awt.Image;
+import java.util.Collection;
 
 public class Album {
 
@@ -13,6 +14,24 @@ public class Album {
 	private String url;
 
 	private Image image;
+
+	private Collection<Track> tracks;
+
+	public Collection<Track> getTracks() {
+		return tracks;
+	}
+
+	public void setTracks(Collection<Track> tracks) {
+		this.tracks = tracks;
+	}
+
+	public void addTrack(Track track) {
+		this.tracks.add(track);
+	}
+
+	public void removeTrack(Track track) {
+		this.tracks.remove(track);
+	}
 
 	public Image getImage() {
 		return image;

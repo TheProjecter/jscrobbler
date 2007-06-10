@@ -38,7 +38,7 @@ public class Scrobbler {
 		Collection<Artist> digestedResult = new ArrayList<Artist>();
 		try {
 			URL url = new URL("http://ws.audioscrobbler.com/1.0/artist/"
-					+ artist + "/similar.xml");
+					+ replaceSpaces(artist) + "/similar.xml");
 
 			digester.setValidating(false);
 			digester.addObjectCreate("similarartists", digestedResult
@@ -83,6 +83,7 @@ public class Scrobbler {
 	 * @return
 	 */
 	public Collection<Track> getMostKnownTracks(String artist) {
+
 		log.debug("Getting most known tracks of: [" + artist + "]");
 
 		Digester digester = new Digester();
@@ -90,7 +91,7 @@ public class Scrobbler {
 
 		try {
 			URL url = new URL("http://ws.audioscrobbler.com/1.0/artist/"
-					+ artist + "/toptracks.xml");
+					+ replaceSpaces(artist) + "/toptracks.xml");
 			digester.setValidating(false);
 
 			digester.addObjectCreate("mostknowntracks", digestedResult
@@ -128,11 +129,12 @@ public class Scrobbler {
 	 */
 	public Collection<Album> getTopAlbums(String artist) {
 		log.debug("Getting top albums of: [" + artist + "]");
+
 		Digester digester = new Digester();
 		Collection<Album> digestedResult = new HashSet<Album>();
 		try {
 			URL url = new URL("http://ws.audioscrobbler.com/1.0/artist/"
-					+ artist + "/topalbums.xml");
+					+ replaceSpaces(artist) + "/topalbums.xml");
 			digester.setValidating(false);
 
 			digester.addObjectCreate("topalbums", digestedResult.getClass());
@@ -161,20 +163,59 @@ public class Scrobbler {
 	}
 
 	/**
+	 *
+	 * @param artist
+	 * @param track
+	 * @return
+	 */
+	public Collection<Tag> getTopTrackTags(String artist, String track) {
+		log.debug("Getting top tags of: Artist - [" + artist + "], Track - ["
+				+ track + "]");
+
+		track = track.replaceAll(" ", "+");
+		URL url = null;
+		try {
+			url = new URL("http://ws.audioscrobbler.com/1.0/track/"
+					+ replaceSpaces(artist) + "/" + replaceSpaces(track)
+					+ "/toptags.xml");
+		} catch (MalformedURLException e) {
+			log.error("Malformed URL, ", e);
+		}
+		return getTopTags(url);
+	}
+
+	/**
+	 *
+	 * @param artist
+	 * @return
+	 */
+	public Collection<Tag> getTopArtistTags(String artist) {
+		log.debug("Getting top tags of: [" + artist + "]");
+
+		URL url = null;
+		try {
+			url = new URL("http://ws.audioscrobbler.com/1.0/artist/"
+					+ replaceSpaces(artist) + "/toptags.xml");
+		} catch (MalformedURLException e) {
+			log.error("Malformed URL, ", e);
+		}
+		return getTopTags(url);
+	}
+
+	/**
 	 * Gets top tags of a given artist name
 	 *
 	 * @param artist
 	 * @return
 	 */
-	public Collection<Tag> getTopTags(String artist) {
-		log.debug("Getting top tags of: [" + artist + "]");
+	private Collection<Tag> getTopTags(URL url) {
+
 		Collection<Tag> tags = new HashSet<Tag>();
 
 		Digester digester = new Digester();
 
 		try {
-			URL url = new URL("http://ws.audioscrobbler.com/1.0/artist/"
-					+ artist + "/toptags.xml");
+
 			digester.setValidating(false);
 
 			digester.addObjectCreate("toptags", tags.getClass());
@@ -190,7 +231,7 @@ public class Scrobbler {
 		} catch (MalformedURLException e) {
 			log.error("Malformed URL, ", e);
 		} catch (FileNotFoundException e) {
-			log.error("Artist with name: [" + artist + "] was not found");
+			log.error("FileNotFoundException, ", e);
 		} catch (IOException e) {
 			log.error("IOException, ", e);
 		} catch (SAXException e) {
@@ -198,5 +239,9 @@ public class Scrobbler {
 		}
 
 		return tags;
+	}
+
+	private String replaceSpaces(String s) {
+		return s.replace(" ", "+");
 	}
 }
