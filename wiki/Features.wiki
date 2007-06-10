@@ -1,76 +1,75 @@
 #summary Features covered by jScrobbler
 #labels Featured
 
-==Covered Functionality==
+==Features==
 
 
 *User Profile Data*
-||**Function**||**Coverage**||
-||Profile Information|| ||
-||Top Artists ||||
-||Top Albums ||||
-||Top Tracks ||||
-||Top Tags ||||
-||Top Tags for Artist ||||
-||Top Tags for Album ||||
-||Top Tags for Track ||||
-||Friends List ||||
-||Neighbours ||||
-||Recent Tracks|||| 
-||Recent Banned Tracks ||||
-||Recent Loved Tracks ||||
-||Recent Journals ||||
-||Weekly Chart List ||||
-||Recent Weekly Artist Chart ||||
-||Recent Weekly Album Chart ||||
-||Recent Weekly Track Chart ||||
-||Previous Weekly Artist Chart ||||
-||Previous Weekly Album Chart ||||
-||Previous Weekly Track Chart ||||
-||Manual Recommendations ||||
-||System Recommendations ||||
-||Current Events ||||
-||Friends' Events ||||
-||System Event Recommendations ||||
-||Taste-O-Meter ||||
+||**Feature**||**Coverage**||
+||Profile Information||Not Yet||
+||Top Artists ||Not Yet||
+||Top Albums ||Not Yet||
+||Top Tracks ||Not Yet||
+||Top Tags ||Not Yet||
+||Top Tags for Artist ||Not Yet||
+||Top Tags for Album ||Not Yet||
+||Top Tags for Track ||Not Yet||
+||Friends List ||Not Yet||
+||Neighbours ||Not Yet||
+||Recent Tracks||Not Yet|| 
+||Recent Banned Tracks ||Not Yet||
+||Recent Loved Tracks ||Not Yet||
+||Recent Journals ||Not Yet||
+||Weekly Chart List ||Not Yet||
+||Recent Weekly Artist Chart ||Not Yet||
+||Recent Weekly Album Chart ||Not Yet||
+||Recent Weekly Track Chart ||Not Yet||
+||Previous Weekly Artist Chart ||Not Yet||
+||Previous Weekly Album Chart ||Not Yet||
+||Previous Weekly Track Chart ||Not Yet||
+||Manual Recommendations ||Not Yet||
+||System Recommendations ||Not Yet||
+||Current Events ||Not Yet||
+||Friends' Events ||Not Yet||
+||System Event Recommendations ||Not Yet||
+||Taste-O-Meter ||Not Yet||
 
 *Artist Data*
-||**Function**||**Coverage**||
-||Related Artists ||||
-||Top Fans ||||
-||Top Tracks ||||
-||Top Albums ||||
-||Top Tags ||||
-||Current Events ||||
+||**Feature**||**Coverage**||
+||Related Artists ||Done||
+||Top Fans ||Not Yet||
+||Top Tracks ||Done||
+||Top Albums ||Done||
+||Top Tags ||Done||
+||Current Events ||Not Yet||
 
 *Album Data*
-||**Function**||**Coverage**||
-||Info ||||
+||**Feature**||**Coverage**||
+||Info ||Not Yet||
 
 *Track Data*
-||**Function**||**Coverage**||
-||Top Fans ||||
-||Top Tags ||||
+||**Feature**||**Coverage**||
+||Top Fans ||Not Yet||
+||Top Tags ||Done||
 
 *Tag Data*
-||**Function**||**Coverage**||
-||Overall Top Tags ||||
-||Top Artists ||||
-||Top Albums ||||
-||Top Tracks ||||
+||**Feature**||**Coverage**||
+||Overall Top Tags ||Not Yet||
+||Top Artists ||Not Yet||
+||Top Albums ||Not Yet||
+||Top Tracks ||Not Yet||
 
 *Group Data*
-||**Function**||**Coverage**||
-||Recent Journals ||||
-||Weekly Chart List ||||
-||Recent Weekly Artist Chart ||||
-||Recent Weekly Album Chart ||||
-||Recent Weekly Track Chart ||||
-||Previous Weekly Artist Chart|||| 
-||Previous Weekly Album Chart ||||
-||Previous Weekly Track Chart ||||
+||**Feature**||**Coverage**||
+||Recent Journals ||Not Yet||
+||Weekly Chart List ||Not Yet||
+||Recent Weekly Artist Chart ||Not Yet||
+||Recent Weekly Album Chart ||Not Yet||
+||Recent Weekly Track Chart ||Not Yet||
+||Previous Weekly Artist Chart||Not Yet|| 
+||Previous Weekly Album Chart ||Not Yet||
+||Previous Weekly Track Chart ||Not Yet||
 
 *Forum Data*
-||**Function**||**Coverage**||
-||Forums ||||
-
+||**Feature**||**Coverage**||
+||Forums ||Not Yet||
