@@ -4,6 +4,8 @@
  */
 package org.jmayorga.jscrobbler.model;
 
+import java.util.Collection;
+
 public class Artist {
 
 	private String name;
@@ -19,6 +21,42 @@ public class Artist {
 	private String image;
 
 	private String streamable;
+
+	private Collection<Album> albums;
+
+	private Collection<Tag> tags;
+
+	public Collection<Tag> getTags() {
+		return tags;
+	}
+
+	public void setTags(Collection<Tag> tags) {
+		this.tags = tags;
+	}
+
+	public Collection<Album> getAlbums() {
+		return albums;
+	}
+
+	public void setAlbums(Collection<Album> albums) {
+		this.albums = albums;
+	}
+
+	public void addAlbum(Album album) {
+		this.albums.add(album);
+	}
+
+	public void removeAlbum(Album album) {
+		this.albums.remove(album);
+	}
+
+	public void addTag(Tag tag) {
+		this.tags.add(tag);
+	}
+
+	public void removeTag(Tag tag) {
+		this.tags.remove(tag);
+	}
 
 	/**
 	 * @return Returns the image.
