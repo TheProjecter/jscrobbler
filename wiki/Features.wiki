@@ -1,0 +1,76 @@
+#summary Features covered by jScrobbler
+#labels Featured
+
+==Covered Functionality==
+
+
+*User Profile Data*
+||**Function**||**Coverage**||
+||Profile Information|| ||
+||Top Artists ||||
+||Top Albums ||||
+||Top Tracks ||||
+||Top Tags ||||
+||Top Tags for Artist ||||
+||Top Tags for Album ||||
+||Top Tags for Track ||||
+||Friends List ||||
+||Neighbours ||||
+||Recent Tracks|||| 
+||Recent Banned Tracks ||||
+||Recent Loved Tracks ||||
+||Recent Journals ||||
+||Weekly Chart List ||||
+||Recent Weekly Artist Chart ||||
+||Recent Weekly Album Chart ||||
+||Recent Weekly Track Chart ||||
+||Previous Weekly Artist Chart ||||
+||Previous Weekly Album Chart ||||
+||Previous Weekly Track Chart ||||
+||Manual Recommendations ||||
+||System Recommendations ||||
+||Current Events ||||
+||Friends' Events ||||
+||System Event Recommendations ||||
+||Taste-O-Meter ||||
+
+*Artist Data*
+||**Function**||**Coverage**||
+||Related Artists ||||
+||Top Fans ||||
+||Top Tracks ||||
+||Top Albums ||||
+||Top Tags ||||
+||Current Events ||||
+
+*Album Data*
+||**Function**||**Coverage**||
+||Info ||||
+
+*Track Data*
+||**Function**||**Coverage**||
+||Top Fans ||||
+||Top Tags ||||
+
+*Tag Data*
+||**Function**||**Coverage**||
+||Overall Top Tags ||||
+||Top Artists ||||
+||Top Albums ||||
+||Top Tracks ||||
+
+*Group Data*
+||**Function**||**Coverage**||
+||Recent Journals ||||
+||Weekly Chart List ||||
+||Recent Weekly Artist Chart ||||
+||Recent Weekly Album Chart ||||
+||Recent Weekly Track Chart ||||
+||Previous Weekly Artist Chart|||| 
+||Previous Weekly Album Chart ||||
+||Previous Weekly Track Chart ||||
+
+*Forum Data*
+||**Function**||**Coverage**||
+||Forums ||||
+
